@@ -8,13 +8,13 @@
 
 # 1 - Soma de números utilizando args:
 
-def sum(*num): 
+def sum(*num):
     sum_total = 0
     for n in num:
         sum_total += n
     print(f'Soma é {sum_total}')
 
-sum(7, 9, 10, 11, 24)
+sum(7, 9, 10, 11, 24, 6)
 
 # 2 - Apresentação de cursos:
 def presentation(**data):
@@ -22,6 +22,4 @@ def presentation(**data):
         print(f'{key} - {value}')
 
 print('###CURSO###')
-presentation(name='Python', category='Backend', level='Iniciante')
-presentation(name='Visão computacional com Python', category='IA', level='Avançado')
-presentation(name='Dashboards com Dash', category='Data Science', level='Intermediário')
+presentation(name='Python', category='Backend', level='Iniciante', avaliacao='Legal')
